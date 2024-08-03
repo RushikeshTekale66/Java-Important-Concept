@@ -1,19 +1,14 @@
+import java.util.Scanner;
+
 class Main{
 	public static void main(String [] args){
-        int a =10;
-        int b =0;
+        Scanner sc = new Scanner(System.in);
 
-        try{
-            System.out.println(a/b);
-        }
-        catch(NullPointerException ne){
-            System.out.println("Null Pointer Exception");
-        }
-        catch(ArithmeticException ae){
-            System.out.println("Arithmetic Exception");
-        }
-        catch(Exception exception){
-            System.out.println("Exception : " + exception);
+        System.out.println("Enter your age : ");
+        int age = sc.nextInt();
+
+        if(age>18){
+            System.out.println("You can vote");
         }
     }
 }
