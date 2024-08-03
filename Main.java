@@ -4,14 +4,20 @@ class Main{
 	public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter your age : ");
-        int age = sc.nextInt();
+        System.out.println("Enter your marks : ");
+        int marks = sc.nextInt();
 
-        if(age>18){
-            System.out.println("You can vote");
+        if(marks>75){
+            System.out.println("First class with distinction");
+        }
+        else if(marks>50){
+            System.out.println("first class");
+        }
+        else if (marks>35){
+            System.out.println("Second class");
         }
         else{
-            System.out.println("You can not vote");
+            System.out.println("Fail");
         }
     }
 }
