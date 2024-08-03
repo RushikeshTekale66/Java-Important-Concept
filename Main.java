@@ -2,22 +2,26 @@ import java.util.Scanner;
 
 class Main{
 	public static void main(String [] args){
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter your marks : ");
-        int marks = sc.nextInt();
-
-        if(marks>75){
-            System.out.println("First class with distinction");
-        }
-        else if(marks>50){
-            System.out.println("first class");
-        }
-        else if (marks>35){
-            System.out.println("Second class");
+        int a = 10;
+        int b = 10;
+        int c = 10;
+                
+        if(a>b){
+            if(a>c){
+                System.out.println("a is greater number");
+            }
+            else{
+                System.out.println("c is greater number");
+            }
         }
         else{
-            System.out.println("Fail");
+            if(b>c){
+                System.out.println("b is greater");
+            }
+            else{
+                System.out.println("c is greater");
+            }
         }
+ 
     }
 }
