@@ -1,18 +1,18 @@
+import java.util.Scanner;
+
 class Main {
 
     public void JavaExceptions() {
-        int [] arr = new int[10];
+        //Create a new Scanner with specified String Object
+        Scanner sc = new Scanner("Hello Geeks");
 
-        try{
-            int num = arr[15];
-            System.out.println(num);
-        }
-        catch(ArrayIndexOutOfBoundsException e){
-            System.out.println("Array Index out of Bound exception " + e);
-        }
-        catch(Exception exception){
-            System.out.println(exception);
-        }
+        //Print the line
+        System.out.println(sc.nextLine());
+
+        //Check if there is an IO exception
+        System.out.println("Exception Occure is : "+ sc.ioException());
+
+        sc.close();
     }
 
     public static void main(String[] args) {
