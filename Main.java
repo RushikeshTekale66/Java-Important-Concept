@@ -1,18 +1,15 @@
-import java.util.HashSet;
-import java.util.Hashtable;
-import java.util.Set;
-
 class Main {
 
     public void JavaExceptions() {
+        int age = 10;
 
-        Set exampleSet = new HashSet();
-        Hashtable exHashtable = new Hashtable();
-
-        //accessing set
-        exampleSet.iterator().next();
-        //accessing hashtable
-        exHashtable.elements().nextElement();
+        if(age>18){
+            System.out.println("Eligible for voting");
+        }
+        else{
+            throw new IllegalArgumentException("No Eligible for voting");
+        }
+        
     }
 
     public static void main(String[] args) {
