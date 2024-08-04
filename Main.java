@@ -1,14 +1,16 @@
 class Main {
 
     public void JavaExceptions() {
-        String str = "Rushikesh";
+        String str = "rushi111111";
 
-        try {
-            char c = str.charAt(20);
-            System.out.println(c);
-        } catch (StringIndexOutOfBoundsException e) {
-            System.out.println("String Index out of bound : "+ e);
-        } catch (Exception exception) {
+        try{
+            int num = Integer.parseInt(str);
+            System.out.println(num);
+        }
+        catch(NumberFormatException e){
+            System.out.println("Number format Exception : "+ e);
+        }
+        catch(Exception exception){
             System.out.println(exception);
         }
     }
