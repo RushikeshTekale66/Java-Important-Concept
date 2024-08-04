@@ -1,27 +1,22 @@
-import java.util.Scanner;
-
 class Main{
-	public static void main(String [] args){
+
+    public void ArithmeticE(){
         int a = 10;
-        int b = 10;
-        int c = 10;
-                
-        if(a>b){
-            if(a>c){
-                System.out.println("a is greater number");
-            }
-            else{
-                System.out.println("c is greater number");
-            }
+        int b = 0;
+
+        try{
+            int c = a/b;
         }
-        else{
-            if(b>c){
-                System.out.println("b is greater");
-            }
-            else{
-                System.out.println("c is greater");
-            }
+        catch(ArithmeticException exception){
+            System.out.println(exception);
         }
- 
+        catch(Exception exception){
+            System.out.println(exception);
+        }
+    }
+
+    public static void main(String[] args) {
+        Main AE = new Main();
+        AE.ArithmeticE();
     }
 }
