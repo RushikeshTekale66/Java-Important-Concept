@@ -1,22 +1,19 @@
-class Main{
+class Main {
 
-    public void ArithmeticE(){
-        int a = 10;
-        int b = 0;
+    public void JavaExceptions() {
+        String str = null;
 
-        try{
-            int c = a/b;
-        }
-        catch(ArithmeticException exception){
-            System.out.println(exception);
-        }
-        catch(Exception exception){
+        try {
+            System.out.println(str.length());
+        } catch (NullPointerException e) {
+            System.out.println("NUll Pointer Exception : "+ e);
+        } catch (Exception exception) {
             System.out.println(exception);
         }
     }
 
     public static void main(String[] args) {
-        Main AE = new Main();
-        AE.ArithmeticE();
+        Main E = new Main();
+        E.JavaExceptions();
     }
 }
