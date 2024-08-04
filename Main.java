@@ -1,18 +1,24 @@
 class Main {
     public void JavaException(){
-        try{
-            Class.forName("Class1");
+        boolean condition = false;
+        if(!condition){
+            throw new UserDefinedException("Condition is false");
         }
-        catch(ClassNotFoundException e){
-            System.out.println("Class not found exception : "+ e);
-        }
-        catch(Exception exception){
-            System.out.println(exception);
+        else{
+            System.out.println("All ok");
         }
     }
 
     public static void main(String[] args) {
         Main je = new Main();
         je.JavaException();
+    }
+}
+
+
+//User defined exception
+class UserDefinedException extends RuntimeException{
+    public UserDefinedException(String message){
+        super(message);
     }
 }
