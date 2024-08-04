@@ -1,14 +1,14 @@
 class Main {
 
     public void JavaExceptions() {
-        String str = "rushi111111";
+        int [] arr = new int[10];
 
         try{
-            int num = Integer.parseInt(str);
+            int num = arr[15];
             System.out.println(num);
         }
-        catch(NumberFormatException e){
-            System.out.println("Number format Exception : "+ e);
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Array Index out of Bound exception " + e);
         }
         catch(Exception exception){
             System.out.println(exception);
