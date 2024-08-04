@@ -1,18 +1,18 @@
-import java.util.Scanner;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.Set;
 
 class Main {
 
     public void JavaExceptions() {
-        //Create a new Scanner with specified String Object
-        Scanner sc = new Scanner("Hello Geeks");
 
-        //Print the line
-        System.out.println(sc.nextLine());
+        Set exampleSet = new HashSet();
+        Hashtable exHashtable = new Hashtable();
 
-        //Check if there is an IO exception
-        System.out.println("Exception Occure is : "+ sc.ioException());
-
-        sc.close();
+        //accessing set
+        exampleSet.iterator().next();
+        //accessing hashtable
+        exHashtable.elements().nextElement();
     }
 
     public static void main(String[] args) {
