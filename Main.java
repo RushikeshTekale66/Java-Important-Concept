@@ -1,12 +1,13 @@
 class Main {
 
     public void JavaExceptions() {
-        String str = null;
+        String str = "Rushikesh";
 
         try {
-            System.out.println(str.length());
-        } catch (NullPointerException e) {
-            System.out.println("NUll Pointer Exception : "+ e);
+            char c = str.charAt(20);
+            System.out.println(c);
+        } catch (StringIndexOutOfBoundsException e) {
+            System.out.println("String Index out of bound : "+ e);
         } catch (Exception exception) {
             System.out.println(exception);
         }
