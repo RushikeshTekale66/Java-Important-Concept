@@ -1,19 +1,18 @@
 class Main {
-
-    public static void add(int a, int b) {
-    System.out.println("Additin of two numbers " + (a + b));
-
+    public void JavaException(){
+        try{
+            Class.forName("Class1");
+        }
+        catch(ClassNotFoundException e){
+            System.out.println("Class not found exception : "+ e);
+        }
+        catch(Exception exception){
+            System.out.println(exception);
+        }
     }
 
     public static void main(String[] args) {
-        int a = 10;
-        int b = -10;
-
-        if(a>=0 && b>=0){
-            add(a, b);
-        }
-        else{
-            throw new IllegalStateException("Either a or b is not positive integer");
-        }
+        Main je = new Main();
+        je.JavaException();
     }
 }
