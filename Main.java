@@ -1,19 +1,19 @@
 class Main {
 
-    public void JavaExceptions() {
-        int age = 10;
+    public static void add(int a, int b) {
+    System.out.println("Additin of two numbers " + (a + b));
 
-        if(age>18){
-            System.out.println("Eligible for voting");
-        }
-        else{
-            throw new IllegalArgumentException("No Eligible for voting");
-        }
-        
     }
 
     public static void main(String[] args) {
-        Main E = new Main();
-        E.JavaExceptions();
+        int a = 10;
+        int b = -10;
+
+        if(a>=0 && b>=0){
+            add(a, b);
+        }
+        else{
+            throw new IllegalStateException("Either a or b is not positive integer");
+        }
     }
 }
